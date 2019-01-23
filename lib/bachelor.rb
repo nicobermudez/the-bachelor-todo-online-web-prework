@@ -50,10 +50,10 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  average = 0
+  sum = 0
+  count = 0
   data.fetch(season).each do |contestant|
-    if contestant.has_value?("Winner")
-      name = contestant.fetch("name").split.first 
+      average = contestant.fetch("name").split.first 
     end
   end
   
