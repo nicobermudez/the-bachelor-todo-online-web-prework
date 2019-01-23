@@ -56,7 +56,6 @@ def get_average_age_for_season(data, season)
   data.fetch(season).each do |contestant|
       sum = contestant.fetch("age")
       count+=1
-    end
   end
   average = sum/count
   average 
