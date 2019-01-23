@@ -12,10 +12,11 @@ end
 def get_contestant_name(data, occupation)
   # code here
     name = ""
-  data.fetch(season).each do |contestant|
-    if contestant.has_value?(occupation)
-      name = contestant.fetch("name") 
-    end
+  data.each do |season|
+    season.each do |contestant|
+      if contestant.has_value?(occupation)
+        name = contestant.fetch("name") 
+      end
   end
   name
 end
