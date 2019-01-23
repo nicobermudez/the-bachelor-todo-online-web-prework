@@ -42,7 +42,7 @@ def get_occupation(data, hometown)
   data.each do |season, values|
     values.each do |contestant|
       if contestant.has_value?(hometown)
-        occupation = contestant.fetch("occupation")
+        return contestant.fetch("occupation")
       end
     end
   end
