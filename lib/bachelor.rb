@@ -2,7 +2,8 @@ def get_first_name_of_season_winner(data, season)
   # code here
   name = ""
   data.fetch(season).each do |contestant|
-    contestant.
+    if contestant.has_value?("Winner")
+      return contestant.fetch("name").split.first 
         
 end
 
