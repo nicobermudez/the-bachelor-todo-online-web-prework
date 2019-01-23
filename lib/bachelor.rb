@@ -17,6 +17,7 @@ def get_contestant_name(data, occupation)
       if contestant.has_value?(occupation)
         name = contestant.fetch("name") 
       end
+    end
   end
   name
 end
