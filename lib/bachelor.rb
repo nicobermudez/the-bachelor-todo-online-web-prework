@@ -1,8 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  data.fetch(season).each do |keys, values|
-    if keys == "status"
-      if values == "Winner"
+  data.fetch(season).each do
         
 end
 
