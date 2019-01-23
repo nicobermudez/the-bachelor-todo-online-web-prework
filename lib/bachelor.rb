@@ -14,7 +14,7 @@ def get_contestant_name(data, occupation)
     name = ""
   data.fetch(season).each do |contestant|
     if contestant.has_value?(occupation)
-      name = contestant.fetch("name").split.first 
+      name = contestant.fetch("name") 
     end
   end
   name
