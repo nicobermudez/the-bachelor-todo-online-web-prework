@@ -56,7 +56,7 @@ def get_average_age_for_season(data, season)
       name = contestant.fetch("name").split.first 
     end
   end
-  name
+  
 end
 
 
