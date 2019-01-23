@@ -11,7 +11,13 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  
+    name = ""
+  data.fetch(season).each do |contestant|
+    if contestant.has_value?(occupation)
+      name = contestant.fetch("name").split.first 
+    end
+  end
+  name
 end
 
 def count_contestants_by_hometown(data, hometown)
