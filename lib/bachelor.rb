@@ -57,8 +57,8 @@ def get_average_age_for_season(data, season)
       sum += contestant.fetch("age").to_f
       count+=1
   end
-  average = sum.round / count
-  average 
+  average = sum / count
+  average.round
 end
 
 
