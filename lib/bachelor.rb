@@ -19,8 +19,5 @@ def get_average_age_for_season(data, season)
   # code here
 end
 
-def get_season(data, season)
-  data.fetch(season)
-end
 
   
